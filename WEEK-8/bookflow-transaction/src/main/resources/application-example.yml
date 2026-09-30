@@ -1,0 +1,17 @@
+# Copy this file to application.yml and replace the password if needed.
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/bookflow
+    username: postgres
+    password: YOUR_POSTGRES_PASSWORD
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+server:
+  port: 8080
